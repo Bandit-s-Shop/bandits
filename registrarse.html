@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandit's Shop :: Registro</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="imagen/png" href="recursos/icono.png">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-image: url(recursos/fondo_registro.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <br><br>
+                <form action="registrarse.php" name="frmRegistrar" id="frmRegistrar" method="POST">
+                    <div class="form-group">
+                        <label for="Nombres">Nombres:</label>
+                        <input type="text" name="txtNombres" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Direccion">Dirección:</label>
+                        <input type="text" name="txtDireccion" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono:</label>
+                        <input type="number" name="txtTelefono" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="DNI">DNI:</label>
+                        <input type="number" name="txtDNI" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Passwd">Contraseña:</label>
+                        <input type="password" name="txtPwd" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Correo Electrónico:</label>
+                        <input type="email" name="txtEmail" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Registrar cuenta">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <br><br><br>
+                <h3 class="text-center" style="font-family: monospace;">Únete a esta gran familia</h3>
+                <br>
+                <a href="home.php"><img src="recursos/bandit.png" alt="" width="600" height="450"></a>
+                <br><br>
+                <p class="text-center">Si ya tienes una cuenta <a href="login.html">Inicia Sesión.</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
